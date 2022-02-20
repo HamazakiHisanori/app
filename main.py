@@ -1,8 +1,4 @@
-from nbformat import write
 import streamlit as st
-import numpy as np
-import pandas as pd
-from PIL import Image
 import time
 
 st.title('アプリケーション')
@@ -28,13 +24,8 @@ with st.expander('パスワードの消し方'):
     st.write('消し方の回答')
 
 
-# option = st.text_input('あなたの趣味を教えてください。')
-# 'あなたの好きな趣味は', option, 'です'
+option = st.text_input('あなたの趣味を教えてください。')
+'あなたの好きな趣味は', option, 'です'
 
-# condition = st.slider('あなたの今の調子は？', 0, 100, 50)
-# 'あなたの好きな趣味は', condition, 'です'
-
-
-# if st.checkbox('Show Image'):
-#     img = Image.open('xviiizz-3b_tjW24pDk-unsplash.jpg')
-#     st.image(img, caption='sample', use_column_width=True)
+condition = st.slider('あなたの今の調子は？', 0, 100, 50)
+'あなたの好きな趣味は', condition, 'です'
